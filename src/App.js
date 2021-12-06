@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import Expenses from "./components/Expenses/Expenses"; 
-import NewExpense from './components/Expenses/NewExpense';
+import NewExpense from './components/NewExpense/NewExpense';
 
 const DUMMY_DATA = [
   {
@@ -26,7 +26,7 @@ const DUMMY_DATA = [
     title: 'New Desk (Wooden)',
     amount: 450,
     date: new Date(2021, 5, 12),
-  },
+  }
 ];
 
 const App = () => {
