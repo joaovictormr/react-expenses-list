@@ -5,7 +5,6 @@ const ExpenseForm = (props) => {
   const [enteredTitle, setEnteredTitle] = useState("");
   const [enteredAmount, setEnteredAmount] = useState("");
   const [enteredDate, setEnteredDate] = useState("");
-  const [showForm, setShowForm] = useState(false);
 
   const titleChangeHandler = (event) => {
     setEnteredTitle(event.target.value);
@@ -58,8 +57,6 @@ const ExpenseForm = (props) => {
           <input
             value={enteredDate}
             type="date"
-            min="2021-01-01"
-            max="2022-12-31"
             onChange={dateChangeHandler}
           />
         </div>
